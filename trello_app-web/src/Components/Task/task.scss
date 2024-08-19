@@ -1,0 +1,15 @@
+@import "../../setting";
+li.task-item {
+  background-color: #ffff;
+  border-radius: $borderRDS5;
+  padding: 5px;
+  line-height: $lineHeight;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  img {
+    width: 100%;
+  }
+}

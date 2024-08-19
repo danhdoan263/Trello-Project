@@ -1,7 +1,20 @@
-import "./App.css";
+import "./App.scss";
 
+//CustomComponent
+
+import AppBar from "@components/AppBar/AppBar";
+import BoardBar from "@components/BoardBar/BoardBar";
+import BoardContent from "@components/BoardContent/BoardContent";
 function App() {
-  return <>Hello ae</>;
+  return (
+    <>
+      <div className="trello-danhdoan-web">
+        <AppBar />
+        <BoardBar />
+        <BoardContent />
+      </div>
+    </>
+  );
 }
 
 export default App;
