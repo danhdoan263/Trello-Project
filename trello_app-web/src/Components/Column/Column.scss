@@ -32,9 +32,10 @@ $column-footer: 26px;
     padding: $gap15;
     border-top-left-radius: $gap15;
     border-top-right-radius: $gap15;
+    font-weight: bold;
   }
   //UL Content
-  ul.task-list {
+  ul.card-list {
     max-height: calc(100% - $column-header - $column-footer);
     overflow-y: auto;
     &::-webkit-scrollbar {
