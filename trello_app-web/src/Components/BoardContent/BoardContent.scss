@@ -1,8 +1,11 @@
 @import "../../setting.scss";
-
+$column-header: 26px;
+$column-footer: 26px;
 .board-content {
   width: 100%;
+  height: $boardContent-height;
   overflow-x: auto;
+  overflow-y: hidden;
   display: flex;
   flex-direction: row;
   gap: $gap15;
@@ -23,6 +26,12 @@
     background-color: darken($color: #07070771, $amount: 15);
     border-radius: $borderRDS15;
     margin-bottom: 5px;
+  }
+  .column-drop-preview {
+    max-height: calc(100% - $column-header - $column-footer - 15%);
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
   }
   //Column
 }

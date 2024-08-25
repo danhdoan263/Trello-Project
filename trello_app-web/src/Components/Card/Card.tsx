@@ -8,13 +8,16 @@ const Card: React.FC<cardProps> = ({ card }) => {
   const cardP = card;
 
   return (
-    <li className="card-item">
+    <div className="card-item">
       <div className="title">
         {" "}
         {cardP.title} {cardP.id}{" "}
       </div>
-      {cardP.cover && <img src={cardP.cover} alt="" />}
-    </li>
+
+      {cardP.cover && (
+        <img src={cardP.cover} alt="" onMouseDown={(e) => e.preventDefault()} />
+      )}
+    </div>
   );
 };
 

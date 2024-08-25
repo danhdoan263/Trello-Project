@@ -1,8 +1,10 @@
+@import "../../setting";
+
 .trello-danhdoan {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  height: $appbar-height;
   &.headnav {
     background-color: var(--primary-grey);
     font-size: 1.5rem;

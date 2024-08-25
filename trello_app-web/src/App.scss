@@ -21,13 +21,12 @@ $board-bg-color: #c7c8cc;
 .trello-danhdoan-web {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
   background: url("./assets/background/background_blur.png");
   background-size: cover;
 
-  height: 100vh;
   display: grid;
-  grid-template-rows: 50px 40px 1fr;
+  grid-template-rows: $appbar-height $boardBar-height $boardContent-height;
   background-color: $board-bg-color;
-  gap: $gap15;
 }

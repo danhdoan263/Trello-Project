@@ -1,8 +1,10 @@
+@import "../../setting.scss";
+
 .trello-danhdoan {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  height: $boardBar-height;
   &.boardBar {
   }
 }
